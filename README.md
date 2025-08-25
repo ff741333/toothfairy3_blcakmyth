@@ -28,6 +28,6 @@ We would like to thank:
 - [nnU-Net](https://github.com/MIC-DKFZ/nnUNet)
 - [VISTA](https://github.com/Project-MONAI/VISTA)
 - [Monai](https://github.com/Project-MONAI/MONAI)
-- The **Toothfairy3 organizers** for their efforts in hosting the challenge  
+- The **[Toothfairy3](https://toothfairy3.grand-challenge.org/) organizers** for their efforts in hosting the challenge  
 
 ---
