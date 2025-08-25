@@ -18,7 +18,6 @@ We provide the training and inference code for **Task 1** and **Task 2**.
 
 ## 🧩 Task 2: IAC Interactive Segmentation
 - **Training code:** [`task2/train`](task2/train)  
-- **IAC segmentation:** uses weights trained in **Task 2**  
 - **Inference (submission) code:** [`task2/submit`](task2/submit)  
 
 ---
@@ -28,6 +27,6 @@ We would like to thank:
 - [nnU-Net](https://github.com/MIC-DKFZ/nnUNet)
 - [VISTA](https://github.com/Project-MONAI/VISTA)
 - [Monai](https://github.com/Project-MONAI/MONAI)
-- The **[Toothfairy3](https://toothfairy3.grand-challenge.org/) organizers** for their efforts in hosting the challenge  
+- The **[Toothfairy3](https://toothfairy3.grand-challenge.org/) [organizers](https://toothfairy3.grand-challenge.org/organizers/)** for their efforts in hosting the challenge  
 
 ---
