@@ -27,6 +27,7 @@ We provide the training and inference code for **Task 1** and **Task 2**.
 We would like to thank:  
 - [nnU-Net](https://github.com/MIC-DKFZ/nnUNet)
 - [VISTA](https://github.com/Project-MONAI/VISTA)
+- [Monai](https://github.com/Project-MONAI/MONAI)
 - The **Toothfairy3 organizers** for their efforts in hosting the challenge  
 
 ---
