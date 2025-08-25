@@ -1,0 +1,1 @@
+from .scripts.infer_iac import InferClass

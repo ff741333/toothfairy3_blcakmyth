@@ -1,0 +1,17 @@
+fire==0.6.0
+matplotlib
+monai==1.4.0
+nibabel
+numpy
+Pillow
+PyYAML
+scipy
+scikit-image
+torch==2.3.0
+tqdm
+tensorboard
+einops
+ml-collections
+timm
+pytorch-ignite
+tensorboardX

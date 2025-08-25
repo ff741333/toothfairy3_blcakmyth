@@ -1,0 +1,1 @@
+algorithmmodel.tar.gz is the model weight and should be extracted to /opt/ml/model/

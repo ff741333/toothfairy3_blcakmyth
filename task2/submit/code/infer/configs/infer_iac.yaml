@@ -1,0 +1,40 @@
+amp: true
+input_channels: 1
+patch_size: [160, 160, 96]
+bundle_root: './infer'
+fold: 0
+infer: {ckpt_name: '/opt/ml/model/model.pt',
+        output_path: $@bundle_root + '/prediction',
+        log_output_file: $@bundle_root + '/inference.log'}
+resample_to_spacing: [1.0, 1.0, 1.0]
+model: "vista3d_segresnet_d"
+image_key: "image"
+transforms_infer:
+  _target_: Compose
+  transforms:
+  - _target_: LoadImaged
+    keys: "@image_key"
+    image_only: True
+  - _target_: EnsureChannelFirstd
+    keys: "@image_key"
+  - _target_: ScaleIntensityRanged
+    a_max: 3608.0
+    a_min: -996.999267578125
+    b_max: 1.0
+    b_min: 0.0
+    clip: true
+    keys: '@image_key'
+  - _target_: Orientationd
+    keys: "@image_key"
+    axcodes: RAS
+  # - _target_: Spacingd
+  #   keys: ["@image_key"]
+  #   pixdim: "@resample_to_spacing"
+  #   mode: [bilinear]
+  #   align_corners: [true]
+  - _target_: CastToTyped
+    keys: "@image_key"
+    dtype: "$torch.float32"
+  - _target_: EnsureTyped
+    keys: "@image_key"
+    track_meta: true
